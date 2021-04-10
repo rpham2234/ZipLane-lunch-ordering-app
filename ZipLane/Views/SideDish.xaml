@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZipLane.Views.SideDish" Title="Side Dish">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Next" x:Name="Nextbutton" Clicked="Nextbutton_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ScrollView Padding="10,10,10,10">
+        <Grid>
+            <!--First Element-->
+            <StackLayout Grid.Row="0">
+                <Frame CornerRadius="17">
+                    <Grid>
+                        <Image Source="unloaded.png" HeightRequest="175" x:Name="Fruit1Image"  HorizontalOptions="Start" Grid.Column="0"/>
+                        <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Fruit1Text"/>
+                        <CheckBox  VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" Color="#008000" x:Name="OrderCheckBox1" CheckedChanged="OrderCheckBox1_CheckedChanged" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <!--Second Element-->
+            <StackLayout Grid.Row="1">
+                <Frame CornerRadius="17" >
+                    <Grid>
+                        <Image Source="unloaded.png" HeightRequest="175" x:Name="Fruit2Image" HorizontalOptions="Start" Grid.Column="0"/>
+                        <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Fruit2Text"/>
+                        <CheckBox  VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" Color="#008000" x:Name="OrderCheckBox2" CheckedChanged="OrderCheckBox2_CheckedChanged"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <!--Third Element-->
+            <StackLayout Grid.Row="2">
+                <Frame CornerRadius="17" >
+                    <Grid>
+                        <Image Source="unloaded.png" HeightRequest="175" x:Name="Fruit3Image" HorizontalOptions="Start" Grid.Column="0"/>
+                        <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Fruit3Text"/>
+                        <CheckBox  VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" Color="#008000" x:Name="OrderCheckBox3" CheckedChanged="OrderCheckBox3_CheckedChanged"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <!--Fourth Element-->
+            <StackLayout Grid.Row="3">
+                <Frame CornerRadius="17" >
+                    <Grid>
+                        <Image Source="unloaded.png" x:Name="Fruit4Image" HeightRequest="175" HorizontalOptions="Start" Grid.Column="0"/>
+                        <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Fruit4Text"/>
+                        <CheckBox  VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" Color="#008000" x:Name="OrderCheckBox4" CheckedChanged="OrderCheckBox4_CheckedChanged"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZipLane.Views.Order_Summary" Title="Order Summary">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Confirm" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Padding="10,10,10,10">
+        <Frame CornerRadius="17" VerticalOptions="CenterAndExpand">
+            <Grid>
+                <Label Text="Order Type: " Grid.Column="0" Grid.Row="1" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Pickup Date: " Grid.Column="0" Grid.Row="2" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Student ID: " Grid.Column="0" Grid.Row="3" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Entree: " Grid.Column="0" Grid.Row="4" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Side 1: " Grid.Column="0" Grid.Row="5" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Side 2: " Grid.Column="0" Grid.Row="6" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Milk: " Grid.Column="0" Grid.Row="7" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Location: " Grid.Column="0" Grid.Row="8" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text="Pickup Time: " Grid.Column="0" Grid.Row="9" FontSize="18" HorizontalOptions="Center"/>
+
+                <Label x:Name="mealtype" Grid.Column="1" Grid.Row="1" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="date" Grid.Column="1" Grid.Row="2" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="studentId" Grid.Column="1" Grid.Row="3" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="entree" Grid.Column="1" Grid.Row="4" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="side1" Grid.Column="1" Grid.Row="5" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="side2" Grid.Column="1" Grid.Row="6" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="milk" Grid.Column="1" Grid.Row="7" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="location" Grid.Column="1" Grid.Row="8" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="time" Grid.Column="1" Grid.Row="9" FontSize="18" HorizontalOptions="Center"/>
+            </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>

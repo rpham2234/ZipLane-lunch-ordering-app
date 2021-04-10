@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns:controls="clr-namespace:ZipLane.Views" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZipLane.Views.Lunch" Title="Lunch">
+    <ScrollView Padding="10,10,10,10">
+        <Grid>
+            <!--First Element-->
+        <StackLayout Grid.Row="0">
+            <Frame CornerRadius="17" >
+                <Grid>
+                    <Image Source="unloaded.png" HeightRequest="175" x:Name="Entree1Image"  HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Entree1Text"/>
+                    <Button Text="Order" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" BackgroundColor="#008000" x:Name="OrderButton1" Clicked="OrderButton1_Clicked"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <!--Second Element-->
+        <StackLayout Grid.Row="1">
+            <Frame CornerRadius="17" >
+                <Grid>
+                    <Image Source="unloaded.png" HeightRequest="175" x:Name="Entree2Image" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Entree2Text"/>
+                    <Button Text="Order" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" BackgroundColor="#008000" x:Name="OrderButton2" Clicked="OrderButton2_Clicked"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <!--Third Element-->
+        <StackLayout Grid.Row="2">
+            <Frame CornerRadius="17" >
+                <Grid>
+                    <Image Source="unloaded.png" HeightRequest="175" x:Name="Entree3Image" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Entree3Text"/>
+                    <Button Text="Order" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" BackgroundColor="#008000" x:Name="OrderButton3" Clicked="OrderButton3_Clicked"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <!--Fourth Element-->
+        <StackLayout Grid.Row="3">
+            <Frame CornerRadius="17" >
+                <Grid>
+                    <Image Source="unloaded.png" x:Name="Entree4Image" HeightRequest="175" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Entree4Text"/>
+                    <Button Text="Order" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" BackgroundColor="#008000" x:Name="OrderButton4" Clicked="OrderButton4_Clicked"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <!--Fifth Element-->
+        <StackLayout Grid.Row="4">
+            <Frame CornerRadius="17" >
+                <Grid>
+                    <Image Source="unloaded.png" x:Name="Entree5Image" HeightRequest="175" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Entree5Text"/>
+                        <Button Text="Order" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" BackgroundColor="#008000" x:Name="OrderButton5" Clicked="OrderButton5_Clicked"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <!--Sixth Element-->
+        <StackLayout Grid.Row="5">
+            <Frame CornerRadius="17" >
+                <Grid>
+                    <Image Source="unloaded.png" x:Name="Entree6Image" HeightRequest="175" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label Text="Cheeseburger" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Column="1" FontSize="18" x:Name="Entree6Text"/>
+                    <Button Text="Order" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="1" BackgroundColor="#008000" x:Name="OrderButton6" Clicked="OrderButton6_Clicked"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+       
+    </Grid>
+    </ScrollView>
+</ContentPage>

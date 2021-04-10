@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZipLane.Views.Order" Title="Order">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView/>
+            <Entry Placeholder="Enter 4th period classroom"
+               x:Name="Classroom"
+               VerticalOptions="EndAndExpand" Grid.ColumnSpan="2" />
+            
+            <BoxView Grid.Column="1"
+                 />
+            <Label Grid.Column="0"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center" FontSize="18"
+               VerticalOptions="Center">
+                <Label.Text>
+                    To begin, please select an option
+                and pickup date
+                </Label.Text>
+            </Label>
+            
+            <BoxView Grid.Row="1"
+                  />
+            <DatePicker  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
+            Date="06/21/2018" x:Name="OrderDate" />
+            <Button Grid.Row="1" BackgroundColor="#008000"
+               Text="Breakfast" x:Name="BreakfastButton" Clicked="BreakfastButton_Clicked"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <BoxView  Grid.Row="1"
+                 Grid.Column="1"
+                  />
+            <Button Grid.Row="1"
+               Grid.Column="1" BackgroundColor="#008000"
+               Text="Lunch" x:Name="LunchButton" Clicked="LunchButton_Clicked"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

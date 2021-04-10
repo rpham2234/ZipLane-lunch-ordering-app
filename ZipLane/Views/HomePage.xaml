@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZipLane.Views.HomePage" Title="Home">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20,20,20">
+            <Image Source="Untitled.png"  WidthRequest="256" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+            <Entry Placeholder="Enter Student ID here" x:Name="StudentID" Keyboard="Numeric" BackgroundColor="#c4c4c4" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Continue" Clicked="Button_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="#008000"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

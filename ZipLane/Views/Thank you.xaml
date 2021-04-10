@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZipLane.Views.Thank_You" Title="Thank you">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="checkmark.png" HeightRequest="150"/>
+            <Label Text="Thank you, your order has been placed." FontSize="18" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Return to Homepage" x:Name="Back2home" BackgroundColor="#008000"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
